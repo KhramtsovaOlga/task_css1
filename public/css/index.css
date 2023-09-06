@@ -41,6 +41,7 @@ ul > li {
 
 .susid ~ p {
   background: blue;
+  color: white;
 }
 
 .salo,
@@ -48,65 +49,73 @@ ul > li {
   background: yellow;
 }
 
-li:first-child {
+.first-task li:first-child {
   color: white;
 }
 
-li:first-child {
+.second-task ul:first-child li:first-child {
   color: yellow;
 }
 
-li:last-child {
+.third-task ul:last-child li:first-child {
   background: yellow;
 }
 
-div:only-child {
+.four-task li:last-child {
+  background: yellow;
+}
+
+.five-task ul:last-child li:last-child {
+  color: white;
+}
+
+.only-child-task div:only-child {
   color: red;
 }
 
-div .seven-task p:first-of-type {
+.seven-task p:first-of-type {
   background: red;
 }
 
-div .eight-task p:last-of-type {
+.eight-task p:last-of-type {
   background: red;
 }
 
-div p:only-of-type {
+.nine-task p:only-of-type {
   background: yellow;
 }
 
-a[href] {
+.lesson-three-task-one a[href] {
   color: white;
 }
 
-li[value] {
+.lesson-three-task-two li[value] {
   color: yellow;
 }
 
-li[value='3'] {
+.lesson-three-task-three li[value='3'] {
   background: red;
 }
 
-button[class~='primary'] {
+.lesson-three-task-four button[class~='primary'] {
   background: blue;
 }
 
-button[class|='secondary'] {
+.lesson-three-task-five button[class|='secondary'] {
   background: red;
 }
 
-li[class^='b'] {
+.lesson-three-task-six li[class^='b'] {
   color: green;
   background: white;
 }
 
-li[class*='on'] {
+.lesson-three-task-seven li[class*='on'] {
   color: green;
   background: white;
 }
 
-li[class$='s'] {
+.lesson-three-task-eight li[class$='s'] {
   color: blue;
   background: white;
 }
@@ -115,7 +124,7 @@ li[class$='s'] {
   color: green;
 }
 
-.lesson-three-task-ten p::first-line {
+.lesson-three-task-ten::first-line {
   background: yellow;
 }
 
@@ -124,9 +133,9 @@ input::placeholder {
 }
 
 .lesson-three-task-twelve li::before {
-  content: '>';
+  content: '➤';
 }
 
 .lesson-three-task-thirteen li::after {
-  content: '>';
+  content: '➤';
 }
